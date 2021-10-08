@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.26">
-    <title>FrostedPears</title><meta name="description" content="description">
-    <link rel="preload" href="/assets/js/runtime~app.200fbfb0.js" as="script"><link rel="preload" href="/assets/css/styles.62955447.css" as="style"><link rel="preload" href="/assets/js/567.52d52c58.js" as="script"><link rel="preload" href="/assets/js/app.6ffe73be.js" as="script">
-    <link rel="stylesheet" href="/assets/css/styles.62955447.css">
-  </head>
-  <body>
-    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/" class="">Take me home</a></div></div><!----><!--]--></div>
-    <script src="/assets/js/runtime~app.200fbfb0.js" defer></script><script src="/assets/js/567.52d52c58.js" defer></script><script src="/assets/js/app.6ffe73be.js" defer></script>
-  </body>
+<head>
+	<style>
+		:root {
+			--c-bg: #fff;
+		}
+
+		html.dark {
+			--c-bg: #22272e;
+		}
+
+		html, body {
+			background-color: var(--c-bg);
+		}
+	</style>
+	<script>
+		(function() {
+			const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+		})();
+	</script>
+<title>FrostedPears</title><meta name="description" content="description">
+<link rel="preload" href="/assets/js/runtime~app.79f3e44c.js" as="script"><link rel="preload" href="/assets/css/styles.d95b2897.css" as="style"><link rel="preload" href="/assets/js/567.52d52c58.js" as="script"><link rel="preload" href="/assets/js/app.f7617369.js" as="script">
+<link rel="stylesheet" href="/assets/css/styles.d95b2897.css">
+</head>
+<body>
+	<div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/" class="">Take me home</a></div></div><!----><!--]--></div>
+	<script src="/assets/js/runtime~app.79f3e44c.js" defer></script><script src="/assets/js/567.52d52c58.js" defer></script><script src="/assets/js/app.f7617369.js" defer></script>
+</body>
 </html>
